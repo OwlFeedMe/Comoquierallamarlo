@@ -61,7 +61,7 @@ public class MainGlassfish {
 //	    		"app/jdbc/petcatalog");
 //	    
 //        System.out.println("------output of create jdbc: " + result.getOutput());
-//
+
         CommandResult result  = runner.run("set-log-level", "javax.enterprise.system.container.web=INFO:javax.enterprise.system.container.ejb=FINEST");
         System.out.println("------output of set log level: " + result.getOutput());
 	Deployer deployer = glassfish.getDeployer();
